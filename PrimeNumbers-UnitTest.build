@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<project name="PrimeNumbers" default="Report" basedir="."> 
+
+	<!--********************************************************************************************************
+	*   EXECUTABLE PATHS                                                                                       
+	*                                                                                                        
+	*   NOTE: Edit propery values to point to the correct locations and versions of executables.               	
+	*********************************************************************************************************-->
+
+	<script language="C#">
+		<code>
+			<![CDATA[
+			// determine whether ProgramFiles directory is 'C:\Program Files' or 'C:\Program Files (x86)'
+			public static void ScriptMain(Project project) 
+			{			
+				string programFilesDir = string.Empty;
+				
+				if (Environment.Is64BitOperatingSystem)
+				{
+					programFilesDir = @"C:\Program Files (x86)";
+				}
+				else
+				{
+					programFilesDir = @"C:\Program Files";
+				}
+
+				project.Properties.Add("ProgramFilesDir", programFilesDir);
+				
+				Console.WriteLine("ProgramFilesDir = {0}", programFilesDir);
+			}
+			]]>
+		</code>
+	</script>
+
+	<echo message="ProgramFilesDir = ${ProgramFilesDir}" />
+
+	<property name="MSBuild.exe" value="C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe"/>
+	<property name="nunit.exe" value="${ProgramFilesDir}\NUnit 2.6.2\bin\nunit-console-x86.exe"/>
+	<property name="OpenCover.exe" value="${ProgramFilesDir}\OpenCover\OpenCover.Console.exe"/>
+	<property name="ReportGenerator.exe" value="C:\AutomatedTestTools\ReportGenerator\bin\ReportGenerator.exe"/>
+
+	<!--********************************************************************************************************
+	*   TARGET DIRECTORIES                                                                                     
+	*                                                                                                        
+	*   Edit propery values for different bin dir and NUnit framework dir locations.                                                    	
+	*********************************************************************************************************-->
+	<property name="BinDir" value="Bin"/>  
+	<property name="ReportsDir" value="${BinDir}\Reports"/>
+ <property name="OpenCoverDir" value="${BinDir}\Reports\OpenCover"/>
+	<property name="NUnitFrameworkDir" value="${ProgramFilesDir}\NUnit 2.6.2\bin\framework"/>
+
+	<!--********************************************************************************************************
+	*   PROJECTS and FILES                                                                                     
+	*                                                                                                        
+	*   Edit propery values with component info and specific files (and locations).                            
+	*   NOTE: locations are relative to the basedir.                                                           
+	*********************************************************************************************************-->
+	<property name="NUnitFramework" value="nunit.framework.dll"/>
+	<property name="ComponentShortName" value="PrimeNumbers" />
+	<property name="BuildSolution" value="${ComponentShortName}BuildUT.sln"/>
+	<property name="TestDll" value="${ComponentShortName}UnitTest.dll"/>
+	<property name="TestFixtureNamespace" value="${ComponentShortName}Test"/>
+	<property name="TestFixtures" value="PrimeNumbersTest"/>
+	<property name="CoverageFixture" value="${TestFixtureNamespace} ${TestDll}"/>
+
+	<!--********************************************************************************************************
+	*   TEST STEPS                                                                                            
+	*********************************************************************************************************-->
+	<!--====================================================================================================
+	    Step: Clean                                                                                      
+	    Actions: Delete the target directory "R:Bin".                                                    
+	             Sleep for 10 seconds to ensure the delete task has completed before moving to the next task.
+	             Create the "R:Bin" and "R:\Bin\Reports" directories.                                        
+	             Copy "nunit.framework.dll" to "R:\Bin".                                                       
+	=====================================================================================================-->
+	<target name="Clean">
+		<delete dir="${BinDir}"/>
+		<sleep seconds="10"/>
+		<mkdir dir="${BinDir}"/>
+		<mkdir dir="${ReportsDir}"/>
+		<copy file="${NUnitFrameworkDir}\${NUnitFramework}" tofile="${BinDir}\${NUnitFramework}" />
+	</target>
+
+	<!--==================================================================================================== 
+        Step: CompileMain                                                                                
+	    Actions: Build the component under test".                                                        
+	=====================================================================================================-->
+	<target name="CompileMain" depends="Clean">
+		<exec program="${MSBuild.exe}">
+			<arg line="${path::get-full-path(BuildSolution)} /t:Rebuild /noconlog /p:Configuration=Release /v:detailed" />
+		</exec>
+	</target>  
+
+
+
+	<!--====================================================================================================
+	    Step: RunTests                                                                                     
+	    Actions: Runs the OpenCover code coverage application, using the NUnit automated application as input.                   
+		Comments: As this test step is the most complicated, some of the input parameters are explained 
+		          below:
+				  * program="${ncover.exe}" 
+						- the NCover application to run.
+		          * commandline="&quot;${nunit.exe}&quot; 
+						- the NUnit application as input to NCover.
+				  * ["]-target:<target application>["]
+						The name of the target application or service that will be started; this can also be a path to the target application.
+
+				  * ["]-targetdir:<path to the target directory>["]
+						The path to the target directory; if the target argument already contains a path then this argument can be used to provide an alternate path where PDB files may be found. 
+				  * ["]-targetargs:<arguments for the target process>["]
+						Arguments to be passed to the target process.
+				  * -register[:user]
+						Use this switch to register and de-register the code coverage profiler. Alternatively use the optional user argument to do per-user registration where the user account does not have administrative permissions. Alternatively use an administrative account to register the profilers using the regsvr32 utility.
+				  * ["]-output:<path to file>["]
+						The location and name of the output xml file. If no value is supplied then the current directory will be used and the output filename will be results.xml.
+				  * ["]-filter:<space separated filters>["]
+						A list of filters to apply to selectively include or exclude assemblies and classes from coverage results. Filters have their own format ±[module-filter]class-filter. If no filter(s) are supplied then a default include all filter is applied +[*]*. As can be seen you can use an * as a wildcard. Also an exclusion filter (-) takes precedence over an inclusion filter (+).
+				  * -mergebyhash
+						Under some scenarios e.g. using MSTest, an assembly may be loaded many times from different locations. This option is used to merge the coverage results for an assembly regardless of where it was loaded assuming the assembly has the same file-hash in each location.
+				  * -showunvisited
+						Show a list of unvisited methods and classes after the coverage run is finished and the results are presented.
+				  * -returntargetcode[:<opencoverreturncodeoffset>]
+						Return the target process return code instead of the OpenCover console return code. Use the offset to return the OpenCover console at a value outside the range returned by the target process. 
+				  * -excludebyattribute:<filter>[;<filter>][;<filter>]
+						Exclude a class or method by filter(s) that match attributes that have been applied that have been applied. An * can be used as a wildcard.
+				  * -excludebyfile:<filter>[;<filter>][;<filter>]
+						Exclude a class (or methods) by filter(s) that match the filenames. An * can be used as a wildcard.
+				  * -hideskipped:File|Filter|Attribute|MissingPdb|All [;File|Filter|Attribute|MissingPdb|All]
+						Remove information from output file (-output:) that relates to classes/modules that have been skipped (filtered) due to the use of the following switches –excludebyfile:,  excludebyattribute: and –filter: or where the PDB is missing.
+				  * -coverbytest:<filter>[;<filter>][;<filter>]
+						Gather coverage by test by analysing the assemblies that match these filters for Test methods. Currently only MSTest and NUnit tests are supported; other frameworks can be added on request – please raise support request on GitHub.
+				  * -log:[Off|Fatal|Error|Warn|Info|Debug|Verbose|All]
+						Change the logging level, default is set to Info. Logging is based on log4net logging levels and appenders.
+				  * -service
+						The value provided in the target parameter is the name of a service rather than a name of a process.
+				  * -oldstyle
+						Use old style instrumentation – the instrumentation is not Silverlight friendly and is provided to support environments where mscorlib instrumentation is not working.
+
+	=====================================================================================================-->
+	<target name="RunTests" depends="CompileMain" >	
+		<exec failonerror="false" program="${OpenCover.exe}" commandline="-register:user -target:&quot;${nunit.exe}&quot; -targetargs:&quot;/nologo  /xml=${ReportsDir}\${ComponentShortName}-TestResults.xml ${BinDir}\${TestDll} /noshadow&quot; -output:${ReportsDir}\${ComponentShortName}-CoverageResults.xml -filter:&quot;+[PrimeNumbers]*&quot;"/>
+	</target>
+
+	<!--====================================================================================================
+	    Step: Report                                                                                       
+	    Actions: Create HTML based reports for the output from the OpenCover and NUnit tests.                 
+	    NOTE: Creation of HTML reports requires ReportGenerator,     
+	          if these are not present the build task will complete successfully however only the          
+	          standard XML reports will be created                                                         
+	=====================================================================================================-->
+	<target name="Report" depends="RunTests">
+		<nunit2report out="${ComponentShortName}-TestResults.html" todir="${ReportsDir}" failonerror="false">
+			<fileset> 
+				<include name="${ReportsDir}\${ComponentShortName}-TestResults.xml" /> 
+			</fileset> 
+		</nunit2report>
+
+		<exec failonerror="false" program="${ReportGenerator.exe}" commandline="-reports:&quot;${ReportsDir}\${ComponentShortName}-CoverageResults.xml&quot; -targetdir:${ReportsDir}\OpenCover"/>
+
+		<copy file="${ReportsDir}\${ComponentShortName}-CoverageResults.xml" tofile="${ComponentShortName}-CoverageResults.xml" />
+		<copy file="${OpenCoverDir}\index.htm" tofile="${ComponentShortName}-CoverageResults.html" />
+		<copy file="${ReportsDir}\${ComponentShortName}-TestResults.xml" tofile="${ComponentShortName}-TestResults.xml" />	
+		<copy file="${ReportsDir}\${ComponentShortName}-TestResults.html" tofile="${ComponentShortName}-TestResults.html" />
+	</target>
+
+</project>

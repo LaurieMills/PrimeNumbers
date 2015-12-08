@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Summary numSequencePoints="76" visitedSequencePoints="56" numBranchPoints="40" visitedBranchPoints="30" sequenceCoverage="73.68" branchCoverage="75" maxCyclomaticComplexity="7" minCyclomaticComplexity="1" />
+  <Modules>
+    <Module skippedDueTo="Filter" hash="B5-EF-91-87-52-88-4E-B0-F8-8C-F4-4C-97-10-C8-D0-C0-7E-55-19">
+      <FullName>C:\windows\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll</FullName>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F9-04-A8-31-CD-FB-23-72-95-63-5D-14-9A-A0-66-8E-7F-44-93-7A">
+      <FullName>C:\windows\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\sorttbls.nlp</FullName>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="DD-C7-B8-46-28-B0-4A-0B-84-CB-A2-DD-7F-EC-4A-98-75-61-4C-17">
+      <FullName>C:\Program Files\NUnit 2.6.2\bin\nunit-console-x86.exe</FullName>
+      <ModuleName>nunit-console-x86</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="6E-30-2E-50-36-FB-60-2C-8E-50-C0-83-54-8B-CC-EA-A8-91-B6-CC">
+      <FullName>C:\windows\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\sortkey.nlp</FullName>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="79-F8-9A-22-4E-29-52-37-00-CF-81-FF-1F-EA-05-EC-74-2A-2E-C8">
+      <FullName>C:\Program Files\NUnit 2.6.2\bin\lib\nunit-console-runner.dll</FullName>
+      <ModuleName>nunit-console-runner</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="23-35-8C-86-05-D5-AE-FE-3C-1F-09-A0-86-02-40-7C-4F-CA-59-41">
+      <FullName>C:\Program Files\NUnit 2.6.2\bin\lib\nunit.core.dll</FullName>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="57-DD-20-42-DA-33-B3-EE-DA-8C-8E-25-C9-E5-07-B5-08-62-0F-88">
+      <FullName>C:\Program Files\NUnit 2.6.2\bin\lib\nunit.util.dll</FullName>
+      <ModuleName>nunit.util</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="AD-76-2F-3C-5E-F6-77-0D-C6-AD-AF-A3-90-85-28-07-2D-A0-59-50">
+      <FullName>C:\Program Files\NUnit 2.6.2\bin\lib\nunit.core.interfaces.dll</FullName>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2C-99-EE-29-D5-25-03-C4-0E-40-26-9B-F7-DF-C2-68-6E-74-74-31">
+      <FullName>C:\windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</FullName>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="D3-99-70-9D-4C-FD-70-CC-82-00-AA-75-7A-54-8C-25-AC-54-B1-BF">
+      <FullName>C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll</FullName>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C4-AD-0A-97-FF-1D-61-5F-88-89-A6-25-BD-02-5E-E5-F5-1D-6F-20">
+      <FullName>C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll</FullName>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="92-44-10-37-4C-84-2D-65-E3-A0-6A-B9-9F-01-42-6A-27-41-4A-8C">
+      <FullName>C:\windows\assembly\GAC_MSIL\System.Runtime.Remoting\2.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</FullName>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="99-F4-69-E2-6C-33-A5-B3-3B-61-3B-3B-4B-BB-A3-8B-81-06-93-5A">
+      <FullName>C:\windows\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll</FullName>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="6D-DC-5C-CD-CD-17-D8-34-8A-02-0A-F6-CB-BC-84-81-BD-88-CB-86">
+      <FullName>C:\Program Files\NUnit 2.6.2\bin\nunit-agent-x86.exe</FullName>
+      <ModuleName>nunit-agent-x86</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="23-35-8C-86-05-D5-AE-FE-3C-1F-09-A0-86-02-40-7C-4F-CA-59-41">
+      <FullName>C:\Program Files\NUnit 2.6.2\bin\lib\nunit.core.dll</FullName>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="57-DD-20-42-DA-33-B3-EE-DA-8C-8E-25-C9-E5-07-B5-08-62-0F-88">
+      <FullName>C:\Program Files\NUnit 2.6.2\bin\lib\nunit.util.dll</FullName>
+      <ModuleName>nunit.util</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="AD-76-2F-3C-5E-F6-77-0D-C6-AD-AF-A3-90-85-28-07-2D-A0-59-50">
+      <FullName>C:\Program Files\NUnit 2.6.2\bin\lib\nunit.core.interfaces.dll</FullName>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="1B-30-81-91-69-2E-50-BD-B9-CC-A1-5B-46-3A-D5-62-E3-7E-58-C4">
+      <FullName>C:\windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</FullName>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="E8-47-7A-41-67-F7-5A-91-1D-B2-1A-48-85-F5-81-AF-DE-91-B4-C2">
+      <FullName>C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</FullName>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="57-C7-F0-53-3B-97-01-CD-67-C1-80-37-68-7F-8F-89-D0-76-B4-48">
+      <FullName>C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</FullName>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="88-AF-AF-B3-FF-8A-DE-A7-50-A8-49-A8-87-FF-70-25-57-19-89-27">
+      <FullName>C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</FullName>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="67-F3-0F-46-4B-85-F4-F3-37-E9-68-D9-AF-7B-B5-C7-C3-13-C5-32">
+      <FullName>C:\windows\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</FullName>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="17-78-87-3F-61-F6-56-22-48-AA-7B-D5-6B-6E-8F-46-94-F2-83-B0">
+      <FullName>C:\windows\assembly\GAC_32\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll</FullName>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="23-35-8C-86-05-D5-AE-FE-3C-1F-09-A0-86-02-40-7C-4F-CA-59-41">
+      <FullName>C:\Program Files\NUnit 2.6.2\bin\lib\nunit.core.dll</FullName>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="1B-30-81-91-69-2E-50-BD-B9-CC-A1-5B-46-3A-D5-62-E3-7E-58-C4">
+      <FullName>C:\windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</FullName>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="88-AF-AF-B3-FF-8A-DE-A7-50-A8-49-A8-87-FF-70-25-57-19-89-27">
+      <FullName>C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</FullName>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="57-C7-F0-53-3B-97-01-CD-67-C1-80-37-68-7F-8F-89-D0-76-B4-48">
+      <FullName>C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</FullName>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C8-69-A6-5A-0E-1E-E0-29-EB-EF-CA-C5-2C-E2-B7-EB-F6-D9-64-1A">
+      <FullName>C:\Program Files\NUnit 2.6.2\bin\pnunit.framework.dll</FullName>
+      <ModuleName>pnunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F9-30-3E-D0-DF-D4-B8-50-24-2D-CB-99-08-61-9C-77-28-1C-6D-29">
+      <FullName>C:\Program Files\NUnit 2.6.2\bin\pnunit-agent.exe</FullName>
+      <ModuleName>pnunit-agent</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="AD-76-2F-3C-5E-F6-77-0D-C6-AD-AF-A3-90-85-28-07-2D-A0-59-50">
+      <FullName>C:\Program Files\NUnit 2.6.2\bin\lib\nunit.core.interfaces.dll</FullName>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="04-8E-F4-87-E3-75-ED-3F-98-00-0A-ED-F4-59-62-7A-5C-94-67-7F">
+      <FullName>E:\PTTest\PrimeNumbers\Bin\PrimeNumbersUnitTest.dll</FullName>
+      <ModuleName>PrimeNumbersUnitTest</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="13-4C-94-D1-A1-A5-D9-8F-F1-E4-CE-A7-87-EF-CC-42-FC-6B-CA-BC">
+      <FullName>E:\PTTest\PrimeNumbers\Bin\nunit.framework.dll</FullName>
+      <ModuleName>nunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="79-F8-9A-22-4E-29-52-37-00-CF-81-FF-1F-EA-05-EC-74-2A-2E-C8">
+      <FullName>C:\Program Files\NUnit 2.6.2\bin\lib\nunit-console-runner.dll</FullName>
+      <ModuleName>nunit-console-runner</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="E8-47-7A-41-67-F7-5A-91-1D-B2-1A-48-85-F5-81-AF-DE-91-B4-C2">
+      <FullName>C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</FullName>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module hash="BD-3D-5A-6F-F9-79-02-A2-1C-98-11-4F-38-BD-ED-D2-76-35-BA-36">
+      <Summary numSequencePoints="76" visitedSequencePoints="56" numBranchPoints="40" visitedBranchPoints="30" sequenceCoverage="73.68" branchCoverage="75" maxCyclomaticComplexity="7" minCyclomaticComplexity="1" />
+      <FullName>E:\PTTest\PrimeNumbers\Bin\PrimeNumbers.exe</FullName>
+      <ModuleName>PrimeNumbers</ModuleName>
+      <Files>
+        <File uid="1" fullPath="e:\PTTest\PrimeNumbers\PrimeNumbers\PrimeNumberGenerator.cs" />
+        <File uid="2" fullPath="e:\PTTest\PrimeNumbers\PrimeNumbers\Program.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" />
+          <FullName>&lt;Module&gt;</FullName>
+          <Methods />
+        </Class>
+        <Class>
+          <Summary numSequencePoints="56" visitedSequencePoints="56" numBranchPoints="31" visitedBranchPoints="30" sequenceCoverage="100" branchCoverage="96.77" maxCyclomaticComplexity="7" minCyclomaticComplexity="1" />
+          <FullName>PrimeNumbers.PrimeNumberGenerator</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>System.Void PrimeNumbers.PrimeNumberGenerator::.ctor()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="1" ordinal="0" offset="0" sl="16" sc="9" el="16" ec="38" />
+                <SequencePoint vc="1" uspid="2" ordinal="1" offset="6" sl="18" sc="9" el="18" ec="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="1" ordinal="0" offset="0" sl="16" sc="9" el="16" ec="38" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="3" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="10" visitedSequencePoints="10" numBranchPoints="5" visitedBranchPoints="5" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="3" minCyclomaticComplexity="3" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>System.Int32 PrimeNumbers.PrimeNumberGenerator::ValidateUserInput(System.String)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="5" uspid="3" ordinal="0" offset="0" sl="30" sc="13" el="30" ec="37" />
+                <SequencePoint vc="5" uspid="4" ordinal="1" offset="2" sl="33" sc="17" el="33" ec="61" />
+                <SequencePoint vc="3" uspid="5" ordinal="2" offset="9" sl="36" sc="17" el="36" ec="57" />
+                <SequencePoint vc="1" uspid="6" ordinal="3" offset="18" sl="38" sc="21" el="38" ec="49" />
+                <SequencePoint vc="2" uspid="7" ordinal="4" offset="22" sl="42" sc="21" el="42" ec="98" />
+                <SequencePoint vc="1" uspid="8" ordinal="5" offset="34" sl="45" sc="13" el="45" ec="43" />
+                <SequencePoint vc="1" uspid="9" ordinal="6" offset="35" sl="47" sc="17" el="47" ec="75" />
+                <SequencePoint vc="1" uspid="10" ordinal="7" offset="47" sl="49" sc="13" el="49" ec="45" />
+                <SequencePoint vc="1" uspid="11" ordinal="8" offset="48" sl="51" sc="17" el="51" ec="94" />
+                <SequencePoint vc="5" uspid="12" ordinal="9" offset="60" sl="53" sc="13" el="53" ec="35" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="2" uspid="13" ordinal="0" offset="11" path="0" />
+                <BranchPoint vc="1" uspid="14" ordinal="1" offset="11" path="1" />
+                <BranchPoint vc="1" uspid="15" ordinal="2" offset="16" path="0" />
+                <BranchPoint vc="1" uspid="16" ordinal="3" offset="16" path="1" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="5" uspid="3" ordinal="0" offset="0" sl="30" sc="13" el="30" ec="37" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="7" sequenceCoverage="100" branchCoverage="92.31" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="17" visitedSequencePoints="17" numBranchPoints="13" visitedBranchPoints="12" sequenceCoverage="100" branchCoverage="92.31" maxCyclomaticComplexity="7" minCyclomaticComplexity="7" />
+              <MetadataToken>100663299</MetadataToken>
+              <Name>System.Collections.Generic.List`1&lt;System.Int32&gt; PrimeNumbers.PrimeNumberGenerator::GeneratePrimeNumbers(System.Int32)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="7" uspid="17" ordinal="0" offset="0" sl="62" sc="13" el="62" ec="54" />
+                <SequencePoint vc="7" uspid="18" ordinal="1" offset="6" sl="64" sc="13" el="64" ec="34" />
+                <SequencePoint vc="5" uspid="19" ordinal="2" offset="10" sl="67" sc="17" el="67" ec="37" />
+                <SequencePoint vc="5" uspid="20" ordinal="3" offset="17" sl="69" sc="17" el="69" ec="43" />
+                <SequencePoint vc="174" uspid="21" ordinal="4" offset="21" sl="72" sc="21" el="72" ec="66" />
+                <SequencePoint vc="174" uspid="22" ordinal="5" offset="30" sl="74" sc="21" el="74" ec="47" />
+                <SequencePoint vc="174" uspid="23" ordinal="6" offset="32" sl="76" sc="26" el="76" ec="36" />
+                <SequencePoint vc="535" uspid="24" ordinal="7" offset="37" sl="78" sc="25" el="78" ec="70" />
+                <SequencePoint vc="92" uspid="25" ordinal="8" offset="49" sl="80" sc="29" el="80" ec="51" />
+                <SequencePoint vc="92" uspid="26" ordinal="9" offset="51" sl="81" sc="29" el="81" ec="35" />
+                <SequencePoint vc="443" uspid="27" ordinal="10" offset="53" sl="76" sc="88" el="76" ec="91" />
+                <SequencePoint vc="617" uspid="28" ordinal="11" offset="59" sl="76" sc="37" el="76" ec="86" />
+                <SequencePoint vc="174" uspid="29" ordinal="12" offset="80" sl="85" sc="21" el="85" ec="39" />
+                <SequencePoint vc="82" uspid="30" ordinal="13" offset="83" sl="87" sc="25" el="87" ec="61" />
+                <SequencePoint vc="174" uspid="31" ordinal="14" offset="90" sl="90" sc="21" el="90" ec="44" />
+                <SequencePoint vc="179" uspid="32" ordinal="15" offset="94" sl="70" sc="17" el="70" ec="58" />
+                <SequencePoint vc="7" uspid="33" ordinal="16" offset="103" sl="94" sc="13" el="94" ec="33" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="5" uspid="34" ordinal="0" offset="8" path="0" />
+                <BranchPoint vc="2" uspid="35" ordinal="1" offset="8" path="1" />
+                <BranchPoint vc="92" uspid="36" ordinal="2" offset="47" path="0" />
+                <BranchPoint vc="443" uspid="37" ordinal="3" offset="47" path="1" />
+                <BranchPoint vc="617" uspid="38" ordinal="4" offset="67" path="0" />
+                <BranchPoint vc="0" uspid="39" ordinal="5" offset="67" path="1" />
+                <BranchPoint vc="82" uspid="40" ordinal="6" offset="78" path="0" />
+                <BranchPoint vc="535" uspid="41" ordinal="7" offset="78" path="1" />
+                <BranchPoint vc="82" uspid="42" ordinal="8" offset="81" path="0" />
+                <BranchPoint vc="92" uspid="43" ordinal="9" offset="81" path="1" />
+                <BranchPoint vc="5" uspid="44" ordinal="10" offset="101" path="0" />
+                <BranchPoint vc="174" uspid="45" ordinal="11" offset="101" path="1" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="7" uspid="17" ordinal="0" offset="0" sl="62" sc="13" el="62" ec="54" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="5" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="20" visitedSequencePoints="20" numBranchPoints="9" visitedBranchPoints="9" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="5" minCyclomaticComplexity="5" />
+              <MetadataToken>100663300</MetadataToken>
+              <Name>System.Collections.Generic.List`1&lt;System.String&gt; PrimeNumbers.PrimeNumberGenerator::GenerateConsoleDisplay(System.Collections.Generic.List`1&lt;System.Int32&gt;)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="46" ordinal="0" offset="0" sl="105" sc="13" el="105" ec="98" />
+                <SequencePoint vc="2" uspid="47" ordinal="1" offset="30" sl="106" sc="13" el="106" ec="55" />
+                <SequencePoint vc="2" uspid="48" ordinal="2" offset="39" sl="108" sc="13" el="108" ec="62" />
+                <SequencePoint vc="2" uspid="49" ordinal="3" offset="45" sl="110" sc="18" el="110" ec="30" />
+                <SequencePoint vc="30" uspid="50" ordinal="4" offset="52" sl="112" sc="17" el="112" ec="59" />
+                <SequencePoint vc="30" uspid="51" ordinal="5" offset="59" sl="113" sc="17" el="113" ec="30" />
+                <SequencePoint vc="2" uspid="52" ordinal="6" offset="62" sl="115" sc="21" el="115" ec="37" />
+                <SequencePoint vc="2" uspid="53" ordinal="7" offset="74" sl="116" sc="44" el="116" ec="56" />
+                <SequencePoint vc="28" uspid="54" ordinal="8" offset="84" sl="116" sc="30" el="116" ec="40" />
+                <SequencePoint vc="28" uspid="55" ordinal="9" offset="93" sl="118" sc="25" el="118" ec="56" />
+                <SequencePoint vc="30" uspid="56" ordinal="10" offset="107" sl="116" sc="41" el="116" ec="43" />
+                <SequencePoint vc="28" uspid="57" ordinal="11" offset="132" sl="123" sc="21" el="123" ec="75" />
+                <SequencePoint vc="28" uspid="58" ordinal="12" offset="157" sl="124" sc="44" el="124" ec="56" />
+                <SequencePoint vc="730" uspid="59" ordinal="13" offset="167" sl="124" sc="30" el="124" ec="40" />
+                <SequencePoint vc="730" uspid="60" ordinal="14" offset="176" sl="126" sc="25" el="126" ec="90" />
+                <SequencePoint vc="758" uspid="61" ordinal="15" offset="204" sl="124" sc="41" el="124" ec="43" />
+                <SequencePoint vc="30" uspid="62" ordinal="16" offset="229" sl="130" sc="17" el="130" ec="72" />
+                <SequencePoint vc="30" uspid="63" ordinal="17" offset="244" sl="110" sc="50" el="110" ec="56" />
+                <SequencePoint vc="32" uspid="64" ordinal="18" offset="248" sl="110" sc="31" el="110" ec="48" />
+                <SequencePoint vc="2" uspid="65" ordinal="19" offset="255" sl="132" sc="13" el="132" ec="35" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="2" uspid="66" ordinal="0" offset="60" path="0" />
+                <BranchPoint vc="28" uspid="67" ordinal="1" offset="60" path="1" />
+                <BranchPoint vc="2" uspid="68" ordinal="2" offset="114" path="0" />
+                <BranchPoint vc="28" uspid="69" ordinal="3" offset="114" path="1" />
+                <BranchPoint vc="28" uspid="70" ordinal="4" offset="211" path="0" />
+                <BranchPoint vc="730" uspid="71" ordinal="5" offset="211" path="1" />
+                <BranchPoint vc="2" uspid="72" ordinal="6" offset="250" path="0" />
+                <BranchPoint vc="30" uspid="73" ordinal="7" offset="250" path="1" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="2" uspid="46" ordinal="0" offset="0" sl="105" sc="13" el="105" ec="98" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="2" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="3" visitedBranchPoints="3" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" />
+              <MetadataToken>100663301</MetadataToken>
+              <Name>System.String PrimeNumbers.PrimeNumberGenerator::FormatRow(System.Collections.Generic.List`1&lt;System.String&gt;,System.Int32)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="30" uspid="74" ordinal="0" offset="0" sl="139" sc="13" el="139" ec="59" />
+                <SequencePoint vc="30" uspid="75" ordinal="1" offset="11" sl="140" sc="39" el="140" ec="46" />
+                <SequencePoint vc="788" uspid="76" ordinal="2" offset="20" sl="140" sc="22" el="140" ec="35" />
+                <SequencePoint vc="788" uspid="77" ordinal="3" offset="28" sl="142" sc="17" el="142" ec="57" />
+                <SequencePoint vc="788" uspid="78" ordinal="4" offset="42" sl="143" sc="17" el="143" ec="37" />
+                <SequencePoint vc="818" uspid="79" ordinal="5" offset="54" sl="140" sc="36" el="140" ec="38" />
+                <SequencePoint vc="30" uspid="80" ordinal="6" offset="79" sl="145" sc="13" el="145" ec="38" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="30" uspid="81" ordinal="0" offset="61" path="0" />
+                <BranchPoint vc="788" uspid="82" ordinal="1" offset="61" path="1" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="30" uspid="74" ordinal="0" offset="0" sl="139" sc="13" el="139" ec="59" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="20" visitedSequencePoints="0" numBranchPoints="9" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="5" minCyclomaticComplexity="1" />
+          <FullName>PrimeNumbers.Program</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="5" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="20" visitedSequencePoints="0" numBranchPoints="9" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="5" minCyclomaticComplexity="5" />
+              <MetadataToken>100663302</MetadataToken>
+              <Name>System.Void PrimeNumbers.Program::Main(System.String[])</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="83" ordinal="0" offset="0" sl="12" sc="13" el="12" ec="84" />
+                <SequencePoint vc="0" uspid="84" ordinal="1" offset="6" sl="13" sc="13" el="13" ec="38" />
+                <SequencePoint vc="0" uspid="85" ordinal="2" offset="8" sl="15" sc="13" el="15" ec="63" />
+                <SequencePoint vc="0" uspid="86" ordinal="3" offset="18" sl="16" sc="13" el="16" ec="136" />
+                <SequencePoint vc="0" uspid="87" ordinal="4" offset="28" sl="20" sc="17" el="20" ec="86" />
+                <SequencePoint vc="0" uspid="88" ordinal="5" offset="38" sl="21" sc="17" el="21" ec="72" />
+                <SequencePoint vc="0" uspid="89" ordinal="6" offset="48" sl="22" sc="17" el="22" ec="92" />
+                <SequencePoint vc="0" uspid="90" ordinal="7" offset="60" sl="24" sc="17" el="24" ec="36" />
+                <SequencePoint vc="0" uspid="91" ordinal="8" offset="63" sl="26" sc="21" el="26" ec="40" />
+                <SequencePoint vc="0" uspid="92" ordinal="9" offset="67" sl="28" sc="22" el="28" ec="40" />
+                <SequencePoint vc="0" uspid="93" ordinal="10" offset="71" sl="30" sc="21" el="30" ec="93" />
+                <SequencePoint vc="0" uspid="94" ordinal="11" offset="79" sl="31" sc="21" el="31" ec="103" />
+                <SequencePoint vc="0" uspid="95" ordinal="12" offset="88" sl="33" sc="21" el="33" ec="43" />
+                <SequencePoint vc="0" uspid="96" ordinal="13" offset="98" sl="34" sc="44" el="34" ec="58" />
+                <SequencePoint vc="0" uspid="97" ordinal="14" offset="109" sl="34" sc="30" el="34" ec="40" />
+                <SequencePoint vc="0" uspid="98" ordinal="15" offset="118" sl="36" sc="25" el="36" ec="48" />
+                <SequencePoint vc="0" uspid="99" ordinal="16" offset="125" sl="34" sc="41" el="34" ec="43" />
+                <SequencePoint vc="0" uspid="100" ordinal="17" offset="150" sl="38" sc="21" el="38" ec="43" />
+                <SequencePoint vc="0" uspid="101" ordinal="18" offset="160" sl="41" sc="15" el="41" ec="36" />
+                <SequencePoint vc="0" uspid="102" ordinal="19" offset="166" sl="42" sc="9" el="42" ec="10" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="103" ordinal="0" offset="61" path="0" />
+                <BranchPoint vc="0" uspid="104" ordinal="1" offset="61" path="1" />
+                <BranchPoint vc="0" uspid="105" ordinal="2" offset="69" path="0" />
+                <BranchPoint vc="0" uspid="106" ordinal="3" offset="69" path="1" />
+                <BranchPoint vc="0" uspid="107" ordinal="4" offset="132" path="0" />
+                <BranchPoint vc="0" uspid="108" ordinal="5" offset="132" path="1" />
+                <BranchPoint vc="0" uspid="109" ordinal="6" offset="161" path="0" />
+                <BranchPoint vc="0" uspid="110" ordinal="7" offset="161" path="1" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="83" ordinal="0" offset="0" sl="12" sc="13" el="12" ec="84" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663303</MetadataToken>
+              <Name>System.Void PrimeNumbers.Program::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="111" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module skippedDueTo="Filter" hash="7D-69-66-4E-84-48-10-3B-A2-9E-B2-0F-8E-17-76-73-FE-7A-47-59">
+      <FullName>C:\windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</FullName>
+      <ModuleName>System.Core</ModuleName>
+      <Classes />
+    </Module>
+  </Modules>
+</CoverageSession>

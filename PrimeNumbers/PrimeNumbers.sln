@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumbers", "PrimeNumbers.csproj", "{34D1BD38-6417-4C44-894E-2CEBD1AEA93C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumbersTests", "PrimeNumbersTests\PrimeNumbersTests.csproj", "{F5239F20-FAAA-480A-9A5C-22848BFCDCDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{257D917E-76B6-4778-86AC-17E9371CFC95}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		PrimeNumbers.vsmdi = PrimeNumbers.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = PrimeNumbers.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34D1BD38-6417-4C44-894E-2CEBD1AEA93C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D1BD38-6417-4C44-894E-2CEBD1AEA93C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D1BD38-6417-4C44-894E-2CEBD1AEA93C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{34D1BD38-6417-4C44-894E-2CEBD1AEA93C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{34D1BD38-6417-4C44-894E-2CEBD1AEA93C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D1BD38-6417-4C44-894E-2CEBD1AEA93C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34D1BD38-6417-4C44-894E-2CEBD1AEA93C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{34D1BD38-6417-4C44-894E-2CEBD1AEA93C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F5239F20-FAAA-480A-9A5C-22848BFCDCDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5239F20-FAAA-480A-9A5C-22848BFCDCDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5239F20-FAAA-480A-9A5C-22848BFCDCDB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F5239F20-FAAA-480A-9A5C-22848BFCDCDB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F5239F20-FAAA-480A-9A5C-22848BFCDCDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5239F20-FAAA-480A-9A5C-22848BFCDCDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5239F20-FAAA-480A-9A5C-22848BFCDCDB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F5239F20-FAAA-480A-9A5C-22848BFCDCDB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
